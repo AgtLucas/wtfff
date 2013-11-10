@@ -65,7 +65,7 @@ module.exports = function(grunt) {
         tasks: ['sass']
       },
       uglify: {
-        files: '<%= meta.srcPathJS %>*.js',
+        files: '<%= meta.srcPathJS %>wtf.js',
         tasks: ['uglify']
       },
       html: {
