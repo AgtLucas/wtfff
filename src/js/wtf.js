@@ -4,14 +4,14 @@ var wtf = wtf || {};
 
   'use strict';
 
-  var forbidenWords = ['javascript:void(0);', 'javascript:void(0)', 'javascript:', '#'];
+  var forbiddenWords = ['javascript:void(0);', 'javascript:void(0)', 'javascript:', '#'];
   var anchors = document.getElementsByTagName('a'),
       len,
       x, z,
       i;
 
-      // for (x = 0, z = forbidenWords.length; x < z; x++) {
-      //   console.log(forbidenWords[x]);
+      // for (x = 0, z = forbiddenWords.length; x < z; x++) {
+      //   console.log(forbiddenWords[x]);
       // }
 
       Array.prototype.equals = function(array, strict) {
@@ -39,7 +39,7 @@ var wtf = wtf || {};
         return true;
       };
 
-      // if (anchors.equals(forbidenWords, false)) {
+      // if (anchors.equals(forbiddenWords, false)) {
       //   console.log('ok');
       // }
 
@@ -47,7 +47,7 @@ var wtf = wtf || {};
         console.log(anchors[i].href);
         var anchorsLinks = anchors[i].href;
         // var anchorsLinks = anchors[i].href;
-        // if (anchorsLinks.equals(forbidenWords, false)) {
+        // if (anchorsLinks.equals(forbiddenWords, false)) {
         //   // anchors[i].addEventListener('click', function(e) {
         //     anchors[i].href = '';
         //     // e.preventDefault();
