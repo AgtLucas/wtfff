@@ -10,12 +10,23 @@ var wtf = wtf || {};
       x, z,
       e, i;
 
+  function stopThat(evt) {
+    evt.preventDefault();
+  }
+
   for (i = 0; i < anchors.length; i++) {
     for (x = 0; x < forbiddenWords.length; x++) {
       if (anchors[i] == forbiddenWords[x]) {
         anchors[i].href = '';
+        anchors[i].addEventListener('click', stopThat, false);
+        // stopThat;
       }
     }
   }
+
+  var never = document.getElementById('never');
+  never.addEventListener('click', function() {
+    document.body.style.background = '#666';
+  }, false);
 
 })(window);
