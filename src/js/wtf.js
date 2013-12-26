@@ -8,6 +8,14 @@ var wtf = wtf || {};
   var anchors = document.getElementsByTagName('a'),
       len,
       x, z,
-      i;
+      e, i;
+
+  for (i = 0; i < anchors.length; i++) {
+    for (x = 0; x < forbiddenWords.length; x++) {
+      if (anchors[i] == forbiddenWords[x]) {
+        anchors[i].href = '';
+      }
+    }
+  }
 
 })(window);
