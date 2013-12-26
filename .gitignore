@@ -3,4 +3,4 @@
 node_modules
 lib
 .sass-cache
-src/_bck.js
+src/js/_bck.js
