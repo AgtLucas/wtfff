@@ -1,6 +1,4 @@
-var wtf = wtf || {};
-
-(function(window, undefined) {
+(function(window, document, undefined) {
 
   'use strict';
 
@@ -29,4 +27,4 @@ var wtf = wtf || {};
     document.body.style.background = '#666';
   }, false);
 
-})(window);
+})(window, document);
