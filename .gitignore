@@ -4,3 +4,4 @@ node_modules
 lib
 .sass-cache
 src/js/_bck.js
+src/js/wtf.min.js
