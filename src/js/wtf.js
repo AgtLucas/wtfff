@@ -3,7 +3,7 @@
   'use strict';
 
   var forbiddenWords = ['javascript:void(0);', 'javascript:void(0)', 'javascript:', '#'];
-  var anchors = document.getElementsByTagName('a'),
+  var anchors = document.querySelectorAll('a'),
       len,
       x, z,
       e, i;
