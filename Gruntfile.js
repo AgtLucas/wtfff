@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = function(grunt) {
+  
+  require('time-grunt')(grunt);
+  // Load all grunt tasks
+  require('load-grunt-tasks')(grunt);
 
   // Project configuration
   grunt.initConfig({
